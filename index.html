@@ -1278,7 +1278,11 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
     });
     setTimeout(function(){
       const ff=document.getElementById('bewform');
-      if(ff) ff.innerHTML = '<p class="danke">'+T('Thank you. Your application has arrived.')+'<br>'+T('we confirm by email within a few days.')+'</p>';
+      if(ff){
+        ff.innerHTML = '<p class="danke">'+T('Thank you. Your application has arrived.')+'<br>'+T('we confirm by email within a few days.')+'</p>';
+        const y = ff.getBoundingClientRect().top + window.pageYOffset - 120;   // Luft für die Kopfzeile
+        window.scrollTo({top: y, behavior: 'smooth'});
+      }
     }, 400);
   }
   f.addEventListener('submit', (ev) => {
@@ -1515,7 +1519,7 @@ function hausschluessel() {
 const SCHLUESSEL = hausschluessel();
 
 // --- ECP-Arts: Lead-Senke (Google-Apps-Script -> Tabelle) ---------------
-const ECPA_SINK = 'https://script.google.com/macros/s/AKfycbzUzgriXVeXB9ZX7uYLBFguc3SB3LCF8HIPc9Z2WEQ51wADeAxaicGQzaVZs-QkW1SAZw/exec';
+const ECPA_SINK = 'https://script.google.com/macros/s/AKfycbzZcSyLW77Xk4sw7IJ06TKPcZCpBq8tl8mvceGJTK2PvuKmwEcaazENP1bk9GS5mrnx/exec';
 function ecpaSendLead(obj){
   try {
     const safe = {};
