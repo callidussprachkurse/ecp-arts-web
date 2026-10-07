@@ -298,5 +298,10 @@
  "Questions about invoices, contracts or payments?": "Вопросы о счетах, договорах или платежах?",
  "You are a partner, or want to become one?": "Вы партнёр или хотите им стать?",
  "Imprint": "Правовая информация",
- "Privacy": "Конфиденциальность"
+ "Privacy": "Конфиденциальность",
+ "CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)": "Резюме — ссылка на ваше резюме в формате PDF (обязательно)",
+ "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "Загрузите резюме в облако (Google Drive, Dropbox и т. д.) и вставьте ссылку сюда. Убедитесь, что она доступна без пароля.",
+ "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "Добавьте ссылку на ваше резюме (PDF в Google Drive, Dropbox и т. д.).",
+ "Please add at least one recording link (audio or video).": "Добавьте хотя бы одну ссылку на запись (аудио или видео).",
+ "CV": "Резюме"
 }

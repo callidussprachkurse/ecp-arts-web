@@ -1064,6 +1064,12 @@ section em,.metall.hell{
       <div class="field full"><label for="s">Training &mdash; where, with whom, until when</label><input id="s" name="training" type="text" placeholder="Conservatoire, teacher, year of completion"></div>
 
       <div class="field full">
+        <label for="cv">CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)</label>
+        <p class="uhint">Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.</p>
+        <input id="cv" name="cv" type="url" inputmode="url" placeholder="https://drive.google.com/…" required>
+      </div>
+
+      <div class="field full">
         <label for="l">Recordings &mdash; maximum four links, audio or video (required)</label>
         <p class="uhint">Upload your recordings on YouTube, Vimeo or a cloud drive and paste the links here, one per line, indicating the name of the aria and your name. Unlisted is fine &mdash; please make sure they are reachable without a password.</p>
         <textarea id="l" name="links" rows="3" placeholder="https://vimeo.com/…&#10;https://youtu.be/…" required></textarea>
@@ -1239,7 +1245,7 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
       ['Applying as', D.stimmfach], ['Date of birth', D.geburt],
       ['Nationality', D.nationalitaet], ['Gender', D.geschlecht],
       ['Languages', D.sprachen], ['Training', D.training],
-      ['Repertoire', D.repertoire], ['Links', D.links], ['Message', D.message]
+      ['Repertoire', D.repertoire], ['Links', D.links], ['CV', D.cv], ['Message', D.message]
     ].filter(r => r[1] && String(r[1]).trim());
     const ov = document.createElement('div'); ov.id='ecpa-review';
     ov.style.cssText='position:fixed;inset:0;z-index:9999;background:rgba(12,11,10,.74);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:5vh 16px;';
@@ -1277,7 +1283,7 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
       anliegen:'Bewerbung 2027', vorname:D.vorname, nachname:D.nachname,
       email:D.email, telefon:D.telefon, land:D.land, stimmfach:D.stimmfach,
       geburt:D.geburt, nationalitaet:D.nationalitaet, geschlecht:D.geschlecht, sprachen:D.sprachen,
-      nachricht:['Training: '+D.training,'Repertoire: '+D.repertoire,'Links: '+D.links,'Message: '+D.message].join(' | '),
+      nachricht:['Training: '+D.training,'Repertoire: '+D.repertoire,'Links: '+D.links,'CV: '+D.cv,'Message: '+D.message].join(' | '),
       einwilligung:D.einwilligung
     });
     setTimeout(function(){
@@ -1306,6 +1312,11 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
     if (!languages) { msg.textContent=T('Please select at least one language.'); return; }
     if (!geb || geb==='ungueltig') { msg.textContent=T('Please give your full date of birth.'); return; }
     if (!f.elements.terms.checked || !f.elements.privacy.checked) { msg.textContent=T('Please accept the conditions and the privacy notice.'); return; }
+    const links=(f.elements.links?.value||'').trim();
+    const cv=(f.elements.cv?.value||'').trim();
+    const urlRe=/https?:\/\/\S+/i;
+    if (!urlRe.test(cv)) { if(f.elements.cv) f.elements.cv.focus(); msg.textContent=T('Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).'); return; }
+    if (!urlRe.test(links)) { if(f.elements.links) f.elements.links.focus(); msg.textContent=T('Please add at least one recording link (audio or video).'); return; }
     const t = name.split(' ');
     const D = {
       vorname:t[0]||'', nachname:t.slice(1).join(' '),
@@ -1314,7 +1325,7 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
       nationalitaet:(f.elements.nationality?.value||''), geschlecht:(f.elements.gender?.value||''),
       sprachen:languages,
       training:(f.elements.training?.value||''), repertoire:(f.elements.repertoire?.value||''),
-      links:(f.elements.links?.value||''), message:(f.elements.message?.value||''),
+      links, cv, message:(f.elements.message?.value||''),
       einwilligung:(f.elements.terms.checked?'AGB ':'')+(f.elements.privacy.checked?'Datenschutz ':'')+(f.elements.future?.checked?'Zukunft':'')
     };
     msg.textContent='';

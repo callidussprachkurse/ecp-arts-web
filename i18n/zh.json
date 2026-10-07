@@ -298,5 +298,10 @@
  "Questions about invoices, contracts or payments?": "关于发票、合同或付款的问题？",
  "You are a partner, or want to become one?": "您是合作伙伴，或希望成为合作伙伴？",
  "Imprint": "法律声明",
- "Privacy": "隐私"
+ "Privacy": "隐私",
+ "CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)": "简历 — 您的简历 PDF 链接（必填）",
+ "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "请将简历上传到云盘（Google Drive、Dropbox 等）并在此粘贴链接。请确保无需密码即可访问。",
+ "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "请添加您的简历链接（Google Drive、Dropbox 等上的 PDF）。",
+ "Please add at least one recording link (audio or video).": "请至少添加一个录音/录像链接（音频或视频）。",
+ "CV": "简历"
 }

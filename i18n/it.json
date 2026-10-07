@@ -298,5 +298,10 @@
  "Questions about invoices, contracts or payments?": "Domande su fatture, contratti o pagamenti?",
  "You are a partner, or want to become one?": "È un partner o desidera diventarlo?",
  "Imprint": "Note legali",
- "Privacy": "Privacy"
+ "Privacy": "Privacy",
+ "CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)": "CV / curriculum — un link al suo CV in PDF (obbligatorio)",
+ "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "Carichi il suo CV su un cloud (Google Drive, Dropbox, ecc.) e incolli qui il link. Si assicuri che sia accessibile senza password.",
+ "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "Aggiunga un link al suo CV (PDF su Google Drive, Dropbox, ecc.).",
+ "Please add at least one recording link (audio or video).": "Aggiunga almeno un link a una registrazione (audio o video).",
+ "CV": "CV"
 }

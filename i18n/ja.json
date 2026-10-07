@@ -298,5 +298,10 @@
  "Questions about invoices, contracts or payments?": "請求書・契約・お支払いに関するご質問は？",
  "You are a partner, or want to become one?": "パートナーの方、またはパートナーをご希望の方は？",
  "Imprint": "インプリント（運営者情報）",
- "Privacy": "プライバシー"
+ "Privacy": "プライバシー",
+ "CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)": "履歴書 — PDFの履歴書へのリンク（必須）",
+ "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "履歴書をクラウド（Google Drive、Dropbox など）にアップロードし、そのリンクをここに貼り付けてください。パスワードなしでアクセスできるようにしてください。",
+ "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "履歴書へのリンクを追加してください（Google DriveやDropboxなどのPDF）。",
+ "Please add at least one recording link (audio or video).": "録音・録画のリンクを少なくとも1つ追加してください（音声または動画）。",
+ "CV": "履歴書"
 }

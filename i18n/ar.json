@@ -298,5 +298,10 @@
  "Questions about invoices, contracts or payments?": "أسئلة حول الفواتير أو العقود أو المدفوعات؟",
  "You are a partner, or want to become one?": "هل أنتم شركاء أو ترغبون في أن تصبحوا كذلك؟",
  "Imprint": "بيانات الناشر",
- "Privacy": "الخصوصية"
+ "Privacy": "الخصوصية",
+ "CV / r&eacute;sum&eacute; &mdash; a link to your CV as a PDF (required)": "السيرة الذاتية — رابط إلى سيرتك الذاتية بصيغة PDF (إلزامي)",
+ "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "ارفع سيرتك الذاتية إلى خدمة تخزين سحابي (Google Drive أو Dropbox وغيرها) وألصق الرابط هنا. يُرجى التأكد من إمكانية الوصول إليه دون كلمة مرور.",
+ "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "يُرجى إضافة رابط إلى سيرتك الذاتية (PDF على Google Drive أو Dropbox وغيرها).",
+ "Please add at least one recording link (audio or video).": "يُرجى إضافة رابط تسجيل واحد على الأقل (صوت أو فيديو).",
+ "CV": "السيرة الذاتية"
 }
