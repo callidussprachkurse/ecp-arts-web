@@ -1228,11 +1228,64 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
     }).join('');
   };
 
+  function ecpaReview(D, T){
+    const rows = [
+      ['Name', (D.vorname+' '+D.nachname).trim()],
+      ['Email', D.email], ['Phone', D.telefon], ['Country', D.land],
+      ['Applying as', D.stimmfach], ['Date of birth', D.geburt],
+      ['Nationality', D.nationalitaet], ['Gender', D.geschlecht],
+      ['Languages', D.sprachen], ['Training', D.training],
+      ['Repertoire', D.repertoire], ['Links', D.links], ['Message', D.message]
+    ].filter(r => r[1] && String(r[1]).trim());
+    const ov = document.createElement('div'); ov.id='ecpa-review';
+    ov.style.cssText='position:fixed;inset:0;z-index:9999;background:rgba(12,11,10,.74);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:5vh 16px;';
+    const card = document.createElement('div');
+    card.style.cssText='background:var(--paper,#F5F1E8);color:var(--text,#1A1714);max-width:560px;width:100%;border-radius:10px;padding:30px clamp(22px,4vw,38px);box-shadow:0 20px 60px rgba(0,0,0,.4);font-family:var(--sans,sans-serif);';
+    const h = document.createElement('h3'); h.textContent = T('Please check your details');
+    h.style.cssText='font-family:var(--serif,Georgia,serif);font-size:1.6rem;margin:0 0 6px;';
+    const sub = document.createElement('p'); sub.textContent = T('If everything is correct, confirm to send. Otherwise go back and edit.');
+    sub.style.cssText='color:var(--muted,#5C5348);font-size:.95rem;margin:0 0 20px;';
+    card.appendChild(h); card.appendChild(sub);
+    rows.forEach(([k,v]) => {
+      const r=document.createElement('div');
+      r.style.cssText='display:flex;gap:14px;padding:9px 0;border-top:1px solid var(--hair,rgba(26,23,20,.16));font-size:.95rem;';
+      const lk=document.createElement('span'); lk.textContent=T(k);
+      lk.style.cssText='flex:0 0 38%;color:var(--muted,#5C5348);';
+      const lv=document.createElement('span'); lv.textContent=v;
+      lv.style.cssText='flex:1;white-space:pre-wrap;word-break:break-word;';
+      r.appendChild(lk); r.appendChild(lv); card.appendChild(r);
+    });
+    const btns=document.createElement('div');
+    btns.style.cssText='display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;';
+    const edit=document.createElement('button'); edit.type='button'; edit.textContent=T('Go back & edit');
+    edit.style.cssText='flex:1;min-width:150px;padding:13px 18px;border:1px solid var(--brass,#B08D57);background:transparent;color:var(--text,#1A1714);border-radius:6px;cursor:pointer;font-size:.95rem;';
+    const conf=document.createElement('button'); conf.type='button'; conf.textContent=T('Confirm & send');
+    conf.style.cssText='flex:1;min-width:150px;padding:13px 18px;border:0;background:var(--brass,#B08D57);color:#120E07;border-radius:6px;cursor:pointer;font-weight:600;font-size:.95rem;';
+    edit.onclick=()=>ov.remove();
+    conf.onclick=()=>{ ov.remove(); ecpaBewAbsenden(D, T); };
+    btns.appendChild(edit); btns.appendChild(conf); card.appendChild(btns);
+    ov.appendChild(card); document.body.appendChild(ov); conf.focus();
+  }
+  function ecpaBewAbsenden(D, T){
+    const btn=document.getElementById('bw-btn');
+    if(btn){ btn.disabled=true; btn.textContent=T('Sending…'); }
+    ecpaSendLead({
+      anliegen:'Bewerbung 2027', vorname:D.vorname, nachname:D.nachname,
+      email:D.email, telefon:D.telefon, land:D.land, stimmfach:D.stimmfach,
+      geburt:D.geburt, nationalitaet:D.nationalitaet, geschlecht:D.geschlecht, sprachen:D.sprachen,
+      nachricht:['Training: '+D.training,'Repertoire: '+D.repertoire,'Links: '+D.links,'Message: '+D.message].join(' | '),
+      einwilligung:D.einwilligung
+    });
+    setTimeout(function(){
+      const ff=document.getElementById('bewform');
+      if(ff) ff.innerHTML = '<p class="danke">'+T('Thank you. Your application has arrived.')+'<br>'+T('we confirm by email within a few days.')+'</p>';
+    }, 400);
+  }
   f.addEventListener('submit', (ev) => {
     ev.preventDefault();
-    const btn = document.getElementById('bw-btn'), msg = document.getElementById('bw-msg');
+    const msg = document.getElementById('bw-msg');
     const T = (s) => (window.ecpaT ? window.ecpaT(s) : s);
-    if (f.elements['website'] && f.elements['website'].value) { return; }   // Honeypot
+    if (f.elements['website'] && f.elements['website'].value) { return; }
     const name = nameGanz('vn','nn');
     const email = (f.elements.email.value||'').trim();
     const phone = telefonGanz('bw-vw','t');
@@ -1246,20 +1299,18 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
     if (!geb || geb==='ungueltig') { msg.textContent=T('Please give your full date of birth.'); return; }
     if (!f.elements.terms.checked || !f.elements.privacy.checked) { msg.textContent=T('Please accept the conditions and the privacy notice.'); return; }
     const t = name.split(' ');
-    btn.disabled = true; btn.textContent = T('Sending\u2026');
-    ecpaSendLead({
-      anliegen:'Bewerbung 2027', vorname:t[0]||'', nachname:t.slice(1).join(' '),
-      email:email, telefon:phone, land:(f.elements.country?.value||''),
+    const D = {
+      vorname:t[0]||'', nachname:t.slice(1).join(' '),
+      email, telefon:phone, land:(f.elements.country?.value||''),
       stimmfach:(f.elements.voice?.value||''), geburt:geb,
       nationalitaet:(f.elements.nationality?.value||''), geschlecht:(f.elements.gender?.value||''),
       sprachen:languages,
-      nachricht:['Training: '+(f.elements.training?.value||''),'Repertoire: '+(f.elements.repertoire?.value||''),
-                 'Links: '+(f.elements.links?.value||''),'Message: '+(f.elements.message?.value||'')].join(' | '),
+      training:(f.elements.training?.value||''), repertoire:(f.elements.repertoire?.value||''),
+      links:(f.elements.links?.value||''), message:(f.elements.message?.value||''),
       einwilligung:(f.elements.terms.checked?'AGB ':'')+(f.elements.privacy.checked?'Datenschutz ':'')+(f.elements.future?.checked?'Zukunft':'')
-    });
-    setTimeout(function(){
-      f.innerHTML = '<p class="danke">'+T('Thank you. Your application has arrived.')+'<br>'+T('we confirm by email within a few days.')+'</p>';
-    }, 400);
+    };
+    msg.textContent='';
+    ecpaReview(D, T);
   });
 })();
 
