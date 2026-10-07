@@ -303,5 +303,6 @@
  "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "Загрузите резюме в облако (Google Drive, Dropbox и т. д.) и вставьте ссылку сюда. Убедитесь, что она доступна без пароля.",
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "Добавьте ссылку на ваше резюме (PDF в Google Drive, Dropbox и т. д.).",
  "Please add at least one recording link (audio or video).": "Добавьте хотя бы одну ссылку на запись (аудио или видео).",
- "CV": "Резюме"
+ "CV": "Резюме",
+ "This is the application to take part in the 2027 programme as a singer &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "Это заявка на участие в программе 2027 года в качестве певца или певицы — не отклик на вакансию. Если вы хотите войти в состав преподавателей, напишите на <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>."
 }

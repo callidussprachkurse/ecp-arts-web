@@ -303,5 +303,6 @@
  "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "请将简历上传到云盘（Google Drive、Dropbox 等）并在此粘贴链接。请确保无需密码即可访问。",
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "请添加您的简历链接（Google Drive、Dropbox 等上的 PDF）。",
  "Please add at least one recording link (audio or video).": "请至少添加一个录音/录像链接（音频或视频）。",
- "CV": "简历"
+ "CV": "简历",
+ "This is the application to take part in the 2027 programme as a singer &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "这是以歌唱者身份参加2027年项目的申请，并非求职申请。如果您希望加入师资团队，请来信 <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>。"
 }

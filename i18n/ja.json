@@ -303,5 +303,6 @@
  "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "履歴書をクラウド（Google Drive、Dropbox など）にアップロードし、そのリンクをここに貼り付けてください。パスワードなしでアクセスできるようにしてください。",
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "履歴書へのリンクを追加してください（Google DriveやDropboxなどのPDF）。",
  "Please add at least one recording link (audio or video).": "録音・録画のリンクを少なくとも1つ追加してください（音声または動画）。",
- "CV": "履歴書"
+ "CV": "履歴書",
+ "This is the application to take part in the 2027 programme as a singer &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "これは2027年プログラムに歌い手として参加するための応募であり、求人への応募ではありません。ファカルティ（指導陣）への参加をご希望の場合は、<a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a> までご連絡ください。"
 }

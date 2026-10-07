@@ -303,5 +303,6 @@
  "Upload your CV to a cloud drive (Google Drive, Dropbox, etc.) and paste the link here. Please make sure it is reachable without a password.": "Carichi il suo CV su un cloud (Google Drive, Dropbox, ecc.) e incolli qui il link. Si assicuri che sia accessibile senza password.",
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "Aggiunga un link al suo CV (PDF su Google Drive, Dropbox, ecc.).",
  "Please add at least one recording link (audio or video).": "Aggiunga almeno un link a una registrazione (audio o video).",
- "CV": "CV"
+ "CV": "CV",
+ "This is the application to take part in the 2027 programme as a singer &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "Questa è la candidatura per partecipare al programma 2027 come cantante — non è una candidatura di lavoro. Se desidera entrare a far parte della faculty, scriva a <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>."
 }
