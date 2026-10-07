@@ -1033,7 +1033,7 @@ section em,.metall.hell{
   <div class="wrap narrow">
     <div class="ey rv">Apply</div>
     <h2 class="rv" style="margin-top:26px;max-width:16ch">Begin your career &mdash; not another course.</h2>
-    <p class="body rv" style="margin-top:16px;font-size:.92rem">This is the application to take part in the 2027 programme as a singer &mdash; not a job application. If you would like to join the faculty, please write to <a href="mailto:office@ecp-arts.com" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px">office@ecp-arts.com</a>.</p>
+    <p class="body rv" style="margin-top:16px;font-size:.92rem">This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href="mailto:office@ecp-arts.com" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px">office@ecp-arts.com</a>.</p>
     <form id="bewform" class="rv" novalidate>
       <div class="field"><label for="vn">First name</label><input id="vn" type="text" autocomplete="given-name" placeholder="Maria" required></div>
       <div class="field"><label for="nn">Surname</label><input id="nn" type="text" autocomplete="family-name" placeholder="Rossi" required></div>
@@ -1076,7 +1076,7 @@ section em,.metall.hell{
         <textarea id="l" name="links" rows="3" placeholder="https://vimeo.com/…&#10;https://youtu.be/…" required></textarea>
       </div>
 
-      <div class="field full"><label for="m">Anything we should know <span style="opacity:.55;text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="m" name="message" rows="3" placeholder="In your own words"></textarea></div>
+      <div class="field full"><label for="m">Anything we should know <span style="opacity:.55;text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="m" name="message" rows="3" maxlength="500" placeholder="In your own words"></textarea></div>
 
       <input type="text" id="bw-web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none">
 
@@ -1315,9 +1315,11 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
     if (!f.elements.terms.checked || !f.elements.privacy.checked) { msg.textContent=T('Please accept the conditions and the privacy notice.'); return; }
     const links=(f.elements.links?.value||'').trim();
     const cv=(f.elements.cv?.value||'').trim();
+    const role=(f.elements.voice?.value||'');
+    const brauchtLinks=!/manager|pianist|titeur/i.test(role);   // Sänger: Aufnahmen Pflicht; Manager/Répétiteur: optional
     const urlRe=/https?:\/\/\S+/i;
     if (!urlRe.test(cv)) { if(f.elements.cv) f.elements.cv.focus(); msg.textContent=T('Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).'); return; }
-    if (!urlRe.test(links)) { if(f.elements.links) f.elements.links.focus(); msg.textContent=T('Please add at least one recording link (audio or video).'); return; }
+    if (brauchtLinks && !urlRe.test(links)) { if(f.elements.links) f.elements.links.focus(); msg.textContent=T('Please add at least one recording link (audio or video).'); return; }
     const t = name.split(' ');
     const D = {
       vorname:t[0]||'', nachname:t.slice(1).join(' '),
