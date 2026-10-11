@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>سفرك إلى البرنامج والعودة إلى بلدك",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>رسوم التأشيرة (شنغن، النوع&nbsp;C)، تُدفع في السفارة الألمانية في بلدك",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>التأمين الصحي &mdash; إلزامي؛ ويمكننا دلالتك على شركاء",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "التقديم مجاني. لا تُستحق الرسوم إلا بعد عرض المقعد وقبوله؛ وشروط الدفع مذكورة في عقد المشاركة. المبلغ المذكور لا يشمل الضريبة: تُضاف ضريبة القيمة المضافة الألمانية بالنسبة القانونية إن كانت مستحقة. أما المرافقون الموسيقيون ومديرو الأوبرا المستقبليون فلهم عرض منفصل.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is the final price: any German value added tax is already included. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "التقديم مجاني. لا تُستحق الرسوم إلا بعد عرض المقعد وقبوله؛ وشروط الدفع مذكورة في عقد المشاركة. المبلغ المذكور هو السعر النهائي: ضريبة القيمة المضافة الألمانية، إن كانت مستحقة، مشمولة فيه. أما المرافقون الموسيقيون ومديرو الأوبرا المستقبليون فلهم عرض منفصل.",
  "Begin your career &mdash; not another course.": "ابدأ مسيرتك &mdash; لا دورة أخرى.",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "هذا هو طلب الالتحاق بدورة 2027. عشرة مقاعد تُمنح بالانتقاء: نستمع بأنفسنا إلى كل تسجيل ونردّ على كل متقدّم. يُغلق باب التقديم حين تكتمل المجموعة.",
  "Country": "البلد",
@@ -307,5 +307,5 @@
  "CV": "السيرة الذاتية",
  "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "هذا طلب للمشاركة في برنامج 2027، وليس طلب توظيف. إذا كنت ترغب في الانضمام إلى هيئة التدريس، فيرجى المراسلة على <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.",
  "for the month &middot; per participant": "للشهر · لكل مشارك",
- "Plus German VAT where applicable.": "يُضاف إليه ضريبة القيمة المضافة الألمانية، إن كانت مستحقة."
+ "VAT already included.": "ضريبة القيمة المضافة مشمولة."
 }

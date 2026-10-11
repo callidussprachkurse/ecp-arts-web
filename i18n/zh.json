@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>前来课程的行程与返程回家",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>签证费（申根 C 类），在贵国的德国使馆缴纳",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>医疗保险 &mdash; 强制要求；我们可代为引荐合作机构",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "申请免费。名额获得提供并被接受后，费用方才到期；付款条件载于参加合同。所列金额为不含税价：如适用，将按法定税率加收德国增值税。 艺术指导与未来的歌剧管理者另行报价。",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is the final price: any German value added tax is already included. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "申请免费。名额获得提供并被接受后，费用方才到期；付款条件载于参加合同。所列金额为最终价格：如适用，德国增值税已包含在内。 艺术指导与未来的歌剧管理者另行报价。",
  "Begin your career &mdash; not another course.": "开启您的事业 &mdash; 而非又一门课程。",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "这是 2027 届的申请。十个名额，择优录取：每一份录音我们亲自聆听，每一位申请者都会收到回复。班级满额后即停止受理。",
  "Country": "国家",
@@ -307,5 +307,5 @@
  "CV": "简历",
  "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "这是参加2027年项目的申请，并非求职申请。如果您希望加入师资团队，请来信 <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>。",
  "for the month &middot; per participant": "每月 · 每位参加者",
- "Plus German VAT where applicable.": "另加德国增值税（如适用）。"
+ "VAT already included.": "已含增值税。"
 }

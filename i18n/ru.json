@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>Дорога на программу и обратно домой",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>Визовый сбор (Шенген, тип&nbsp;C), оплачивается в посольстве Германии в вашей стране",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>Медицинская страховка &mdash; обязательна; мы можем подсказать партнёров",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "Подача заявки бесплатна. Плата вносится только после того, как место предложено и принято; условия оплаты указаны в договоре об участии. Сумма указана без налога: немецкий НДС добавляется по установленной ставке, если он применяется. Концертмейстеры и будущие оперные менеджеры получают отдельное предложение.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is the final price: any German value added tax is already included. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "Подача заявки бесплатна. Плата вносится только после того, как место предложено и принято; условия оплаты указаны в договоре об участии. Указана окончательная цена: немецкий НДС, если он применяется, уже включён. Концертмейстеры и будущие оперные менеджеры получают отдельное предложение.",
  "Begin your career &mdash; not another course.": "Начните карьеру &mdash; а не ещё один курс.",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "Это заявка на набор 2027 года. Десять мест по отбору: мы сами слушаем каждую запись и отвечаем каждому. Приём закрывается, как только группа собрана.",
  "Country": "Страна",
@@ -307,5 +307,5 @@
  "CV": "Резюме",
  "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "Это заявка на участие в программе 2027 года — не отклик на вакансию. Если вы хотите войти в состав преподавателей, напишите на <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.",
  "for the month &middot; per participant": "за месяц · с участника",
- "Plus German VAT where applicable.": "Плюс немецкий НДС, если он применяется."
+ "VAT already included.": "НДС уже включён."
 }
