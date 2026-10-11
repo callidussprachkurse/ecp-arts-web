@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>A sua viagem para o programa e o regresso a casa",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>Taxas de visto (Schengen, tipo&nbsp;C), pagas na embaixada alemã do seu país",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>Seguro de saúde &mdash; obrigatório; podemos indicar parceiros",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "Candidatar-se é gratuito. A propina só é devida depois de uma vaga ser oferecida e aceite; as condições de pagamento constam do contrato de participação. Repetidores e futuros gestores de ópera recebem proposta própria.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "Candidatar-se é gratuito. A propina só é devida depois de uma vaga ser oferecida e aceite; as condições de pagamento constam do contrato de participação. O valor entende-se líquido: o IVA alemão é acrescentado à taxa legal, quando aplicável. Repetidores e futuros gestores de ópera recebem proposta própria.",
  "Begin your career &mdash; not another course.": "Comece a sua carreira &mdash; não mais um curso.",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "Esta é a candidatura à edição 2027. Dez vagas, atribuídas por seleção: ouvimos nós próprios cada gravação e respondemos a cada candidato. As candidaturas encerram quando o grupo estiver completo.",
  "Country": "País",
@@ -277,6 +277,7 @@
  "Invited &middot; confirmation pending": "Convidado &middot; confirmação pendente",
  "Names shown in grey are invited; their membership is confirmed in due course.": "Os nomes a cinzento estão convidados; a sua adesão será confirmada em devido tempo.",
  "Our Honorary Advisory Board is currently in formation. We will present the members of the board soon.": "O nosso Conselho Consultivo Honorário encontra-se atualmente em formação. Apresentaremos os seus membros em breve.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "Candidatar-se é gratuito. A propina só é devida depois de uma vaga ser oferecida e aceite; as condições de pagamento constam do contrato de participação. Repetidores e futuros gestores de ópera recebem proposta própria.",
  "Our Partners will be published soon.": "Os nossos parceiros serão anunciados em breve.",
  "Events": "Eventos",
  "In person": "Pessoalmente",
@@ -304,5 +305,7 @@
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "Adicione um link para o seu CV (PDF no Google Drive, Dropbox, etc.).",
  "Please add at least one recording link (audio or video).": "Adicione pelo menos um link de gravação (áudio ou vídeo).",
  "CV": "CV",
- "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "Esta é a candidatura para participar no programa de 2027 — não é uma candidatura a emprego. Se deseja integrar a faculty, escreva para <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>."
+ "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "Esta é a candidatura para participar no programa de 2027 — não é uma candidatura a emprego. Se deseja integrar a faculty, escreva para <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.",
+ "for the month &middot; per participant": "pelo mês · por participante",
+ "Plus German VAT where applicable.": "Acrescido do IVA alemão, quando aplicável."
 }

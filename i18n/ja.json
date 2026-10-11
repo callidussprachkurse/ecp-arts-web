@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>プログラムへの往路とご帰宅までの復路",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>査証料（シェンゲン・Cタイプ）。お住まいの国のドイツ大使館でお支払いください",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>健康保険 &mdash; 加入は必須。提携先をご紹介できます",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "応募は無料です。費用が発生するのは、席が提示され受諾された後のみで、支払条件は参加契約に定めます。コレペティトゥーアと将来のオペラ・マネージャーには別途ご提案します。",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "応募は無料です。費用が発生するのは、席が提示され受諾された後のみで、支払条件は参加契約に定めます。表示額は税別です。該当する場合、ドイツの付加価値税が法定税率で加算されます。 コレペティトゥーアと将来のオペラ・マネージャーには別途ご提案します。",
  "Begin your career &mdash; not another course.": "次の講座ではなく &mdash; キャリアを始めてください。",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "これは2027年度への応募です。選考による10名。録音はすべて私たち自身が聴き、すべての応募者に返信します。定員が満たされ次第、受付を終了します。",
  "Country": "国",
@@ -277,6 +277,7 @@
  "Invited &middot; confirmation pending": "招請中 &middot; 確認待ち",
  "Names shown in grey are invited; their membership is confirmed in due course.": "グレーで表示された方々は招請中であり、就任は追って確定します。",
  "Our Honorary Advisory Board is currently in formation. We will present the members of the board soon.": "名誉アドバイザリーボードは現在設立準備中です。メンバーは近日中にご紹介いたします。",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "応募は無料です。費用が発生するのは、席が提示され受諾された後のみで、支払条件は参加契約に定めます。コレペティトゥーアと将来のオペラ・マネージャーには別途ご提案します。",
  "Our Partners will be published soon.": "パートナーは近日中に発表いたします。",
  "Events": "イベント",
  "In person": "対面で",
@@ -304,5 +305,7 @@
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "履歴書へのリンクを追加してください（Google DriveやDropboxなどのPDF）。",
  "Please add at least one recording link (audio or video).": "録音・録画のリンクを少なくとも1つ追加してください（音声または動画）。",
  "CV": "履歴書",
- "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "これは2027年プログラムに参加するための応募であり、求人への応募ではありません。ファカルティ（指導陣）への参加をご希望の場合は、<a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a> までご連絡ください。"
+ "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "これは2027年プログラムに参加するための応募であり、求人への応募ではありません。ファカルティ（指導陣）への参加をご希望の場合は、<a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a> までご連絡ください。",
+ "for the month &middot; per participant": "1か月あたり・参加者ごと",
+ "Plus German VAT where applicable.": "別途、ドイツの付加価値税（該当する場合）。"
 }

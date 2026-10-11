@@ -90,7 +90,7 @@
  "<span class=\"mk\">i</span>Your journey to the programme and back home": "<span class=\"mk\">i</span>سفرك إلى البرنامج والعودة إلى بلدك",
  "<span class=\"mk\">ii</span>Visa fees (Schengen, type&nbsp;C), paid at the German embassy in your country": "<span class=\"mk\">ii</span>رسوم التأشيرة (شنغن، النوع&nbsp;C)، تُدفع في السفارة الألمانية في بلدك",
  "<span class=\"mk\">iii</span>Health insurance &mdash; compulsory; we can put you in touch with partners": "<span class=\"mk\">iii</span>التأمين الصحي &mdash; إلزامي؛ ويمكننا دلالتك على شركاء",
- "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "التقديم مجاني. لا تُستحق الرسوم إلا بعد عرض المقعد وقبوله؛ وشروط الدفع مذكورة في عقد المشاركة. أما المرافقون الموسيقيون ومديرو الأوبرا المستقبليون فلهم عرض منفصل.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. The figure is stated net: German value added tax is added at the statutory rate where it applies. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "التقديم مجاني. لا تُستحق الرسوم إلا بعد عرض المقعد وقبوله؛ وشروط الدفع مذكورة في عقد المشاركة. المبلغ المذكور لا يشمل الضريبة: تُضاف ضريبة القيمة المضافة الألمانية بالنسبة القانونية إن كانت مستحقة. أما المرافقون الموسيقيون ومديرو الأوبرا المستقبليون فلهم عرض منفصل.",
  "Begin your career &mdash; not another course.": "ابدأ مسيرتك &mdash; لا دورة أخرى.",
  "This is the application for the 2027 edition. Ten places, awarded by selection: we listen to every recording ourselves and answer every applicant. Applications close once the cohort is complete.": "هذا هو طلب الالتحاق بدورة 2027. عشرة مقاعد تُمنح بالانتقاء: نستمع بأنفسنا إلى كل تسجيل ونردّ على كل متقدّم. يُغلق باب التقديم حين تكتمل المجموعة.",
  "Country": "البلد",
@@ -217,7 +217,7 @@
  "<span>Eight members</span><span>From around the world</span><span>Equal, women and men</span>": "<span>ثمانية أعضاء</span><span>من مختلف أنحاء العالم</span><span>مناصفةً، نساءً ورجالًا</span>",
  "Vocal coaching": "تدريب صوتي",
  "Opera leadership": "إدارة الأوبرا",
- "Agency Partners": "الوكالات الشريكة",
+ "Agency Partners": "وكالات شريكة",
  "Agency Partners — ECP-Arts": "وكالات شريكة — ECP-Arts",
  "Industry Access": "الوصول إلى القطاع",
  "From the studio to the&nbsp;<em>roster</em>.": "من الأستوديو إلى&nbsp;<em>قائمة الوكالة</em>.",
@@ -277,6 +277,7 @@
  "Invited &middot; confirmation pending": "مدعوّ &middot; في انتظار التأكيد",
  "Names shown in grey are invited; their membership is confirmed in due course.": "الأسماء المعروضة باللون الرمادي مدعوّة، وتُؤكَّد عضويتها في حينه.",
  "Our Honorary Advisory Board is currently in formation. We will present the members of the board soon.": "مجلسنا الاستشاري الفخري قيد التشكيل حاليًا، وسنكشف عن أعضائه قريبًا.",
+ "Applying is free. The fee falls due only after a place has been offered and accepted; payment terms are set out in the participation contract. R&eacute;p&eacute;titeurs and emerging opera managers are quoted separately.": "التقديم مجاني. لا تُستحق الرسوم إلا بعد عرض المقعد وقبوله؛ وشروط الدفع مذكورة في عقد المشاركة. أما المرافقون الموسيقيون ومديرو الأوبرا المستقبليون فلهم عرض منفصل.",
  "Our Partners will be published soon.": "سيتم الإعلان عن شركائنا قريبًا.",
  "Events": "الفعاليات",
  "In person": "لقاء شخصي",
@@ -304,5 +305,7 @@
  "Please add a link to your CV (PDF on Google Drive, Dropbox, etc.).": "يُرجى إضافة رابط إلى سيرتك الذاتية (PDF على Google Drive أو Dropbox وغيرها).",
  "Please add at least one recording link (audio or video).": "يُرجى إضافة رابط تسجيل واحد على الأقل (صوت أو فيديو).",
  "CV": "السيرة الذاتية",
- "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "هذا طلب للمشاركة في برنامج 2027، وليس طلب توظيف. إذا كنت ترغب في الانضمام إلى هيئة التدريس، فيرجى المراسلة على <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>."
+ "This is the application to take part in the 2027 programme &mdash; not a job application. If you would like to join the faculty, please write to <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.": "هذا طلب للمشاركة في برنامج 2027، وليس طلب توظيف. إذا كنت ترغب في الانضمام إلى هيئة التدريس، فيرجى المراسلة على <a href=\"mailto:office@ecp-arts.com\" style=\"color:var(--text);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px\">office@ecp-arts.com</a>.",
+ "for the month &middot; per participant": "للشهر · لكل مشارك",
+ "Plus German VAT where applicable.": "يُضاف إليه ضريبة القيمة المضافة الألمانية، إن كانت مستحقة."
 }
