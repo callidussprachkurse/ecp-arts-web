@@ -1630,7 +1630,18 @@ const pgMail = document.getElementById('pg-mail'), pgTel = document.getElementBy
 </script>
 <script src="i18n.js" defer></script>
 <script src="hinweis.js" defer></script>
-<script>/* ecpa-count: anonyme Seitenzaehlung, keine Cookies, keine IP */
-(function(){try{var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}new Image().src="https://imac-von-callidus.tail200fa5.ts.net/z?p="+encodeURIComponent(location.pathname)+"&r="+encodeURIComponent(r)+"&t="+Date.now();}catch(e){}})();</script>
+<script>/* ecpa-count: anonyme Seitenzaehlung + aktive Lesezeit, keine Cookies, keine IP, keine Besucher-ID */
+(function(){try{
+ var B="https://imac-von-callidus.tail200fa5.ts.net/z";
+ var P=encodeURIComponent(location.pathname);
+ var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}
+ new Image().src=B+"?p="+P+"&r="+encodeURIComponent(r)+"&t="+Date.now();
+ var aktiv=0,start=Date.now(),sicht=!document.hidden,weg=false;
+ function pause(){if(sicht){aktiv+=Date.now()-start;sicht=false;}}
+ function los(){if(!sicht){start=Date.now();sicht=true;}}
+ function sende(){if(weg)return;pause();var s=Math.round(aktiv/1000);if(s<2||s>3600){weg=true;return;}weg=true;try{navigator.sendBeacon(B+"?p="+P+"&d="+s);}catch(e){}}
+ document.addEventListener("visibilitychange",function(){if(document.hidden){pause();sende();}else{los();}});
+ addEventListener("pagehide",sende);
+}catch(e){}})();</script>
 </body>
 </html>
