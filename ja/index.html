@@ -755,11 +755,11 @@ section em,.metall.hell{
     <a href="#programme">プログラム</a>
     <a href="#edition">2027年度</a>
     <a href="#who">対象</a>
-    <a href="advisory.html">名誉顧問会</a>
-    <a href="teachers.html">教授陣</a>
-    <a href="agency-partners.html">提携エージェンシー</a>
-    <a href="conservatoires.html">提携音楽院</a>
-    <a href="events.html">イベント</a>
+    <a href="/ja/advisory.html">名誉顧問会</a>
+    <a href="/ja/teachers.html">教授陣</a>
+    <a href="/ja/agency-partners.html">提携エージェンシー</a>
+    <a href="/ja/conservatoires.html">提携音楽院</a>
+    <a href="/ja/events.html">イベント</a>
     <a href="#apply">応募</a>
   </div>
 </nav>
@@ -1064,11 +1064,11 @@ section em,.metall.hell{
     <div class="cdown rv" aria-live="polite">
       <span class="cd-lab">Applications close in</span>
       <div class="cd-clock">
-        <div class="cd-seg"><span class="cd-num" id="cd-d">37</span><span class="cd-u" id="cd-du">days</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-d">36</span><span class="cd-u" id="cd-du">days</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-h">1</span><span class="cd-u" id="cd-hu">hour</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-h">21</span><span class="cd-u" id="cd-hu">hours</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-m">9</span><span class="cd-u" id="cd-mu">minutes</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-m">32</span><span class="cd-u" id="cd-mu">minutes</span></div>
       </div>
       <span class="cd-date" id="cd-date">Deadline · 20 December 2026, 18:00 CET</span>
     </div>
@@ -1166,8 +1166,8 @@ https://youtu.be/…" required=""></textarea>
 
       <input type="text" id="bw-web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none">
 
-      <label class="consent field full"><input id="ok1" name="terms" type="checkbox" required=""><span><a href="terms.html" target="_blank" rel="noopener">応募条件</a>を読み、同意します。</span></label>
-      <label class="consent field full"><input id="ok2" name="privacy" type="checkbox" required=""><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーに関する説明</a>を読み、本選考のために応募書類と録音が保存・審査されることに同意します。</span></label>
+      <label class="consent field full"><input id="ok1" name="terms" type="checkbox" required=""><span><a href="/ja/terms.html" target="_blank" rel="noopener">応募条件</a>を読み、同意します。</span></label>
+      <label class="consent field full"><input id="ok2" name="privacy" type="checkbox" required=""><span><a href="/ja/privacy.html" target="_blank" rel="noopener">プライバシーに関する説明</a>を読み、本選考のために応募書類と録音が保存・審査されることに同意します。</span></label>
       <label class="consent field full"><input id="ok3" name="future" type="checkbox"><span>任意：応募内容を保管し、今後の期についてご連絡いただいて構いません。</span></label>
 
       <div class="submit"><button type="submit" class="sub-btn" id="bw-btn">応募を送信</button></div>
@@ -1218,11 +1218,11 @@ https://youtu.be/…" required=""></textarea>
         <a href="#programme">プログラム</a>
         <a href="#edition">2027年度</a>
         <a href="#who">対象</a>
-        <a href="advisory.html">名誉顧問会</a>
-        <a href="teachers.html">教授陣</a>
-    <a href="agency-partners.html">提携エージェンシー</a>
-    <a href="conservatoires.html">提携音楽院</a>
-    <a href="events.html">イベント</a>
+        <a href="/ja/advisory.html">名誉顧問会</a>
+        <a href="/ja/teachers.html">教授陣</a>
+    <a href="/ja/agency-partners.html">提携エージェンシー</a>
+    <a href="/ja/conservatoires.html">提携音楽院</a>
+    <a href="/ja/events.html">イベント</a>
         <a href="#apply">応募</a>
       </div>
       <div>
@@ -1237,7 +1237,7 @@ https://youtu.be/…" required=""></textarea>
     </div>
     <div class="base">
       <span>© 2026 European Centre of Performing Arts<br><span class="founded">Founded by Danny Matz</span></span>
-      <span style="white-space:nowrap"><a href="imprint.html">インプリント（運営者情報）</a> · <a href="privacy.html">プライバシー</a></span>
+      <span style="white-space:nowrap"><a href="/ja/imprint.html">インプリント（運営者情報）</a> · <a href="/ja/privacy.html">プライバシー</a></span>
     </div>
   </div>
   <script>
@@ -1596,13 +1596,22 @@ const PROSPEKTE = {
 function downloadBlock(role) {
   let links;
   if (PROSPEKTE[role]) {
-    links = `<a href="${PROSPEKTE[role][1]}" download>Download the prospectus (PDF)</a>`;
+    links = `<a href="${PROSPEKTE[role][1]}" download data-dl="${role}">Download the prospectus (PDF)</a>`;
   } else {
-    links = Object.values(PROSPEKTE).map(([lab, href]) =>
-      `<a href="${href}" download>${lab} (PDF)</a>`).join('');
+    links = Object.entries(PROSPEKTE).map(([key, [lab, href]]) =>
+      `<a href="${href}" download data-dl="${key}">${lab} (PDF)</a>`).join('');
   }
   return `<div class="dl"><div class="t">Your prospectus is ready to download.</div><div class="lnk">${links}</div></div>`;
 }
+// Anonyme Download-Zaehlung (keine Cookies, keine IP) — feuert neben dem eigentlichen Download.
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a[data-dl]');
+  if (!a) return;
+  try {
+    new Image().src = 'https://imac-von-callidus.tail200fa5.ts.net/z?dl='
+      + encodeURIComponent(a.getAttribute('data-dl')) + '&t=' + Date.now();
+  } catch (_) {}
+});
 
 // Detailprogramm einsetzen — vom Formular oder vom Hausschluessel
 function zeigeProgramm(prog, springen, role) {

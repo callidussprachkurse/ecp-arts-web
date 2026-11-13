@@ -1595,13 +1595,22 @@ const PROSPEKTE = {
 function downloadBlock(role) {
   let links;
   if (PROSPEKTE[role]) {
-    links = `<a href="${PROSPEKTE[role][1]}" download>Download the prospectus (PDF)</a>`;
+    links = `<a href="${PROSPEKTE[role][1]}" download data-dl="${role}">Download the prospectus (PDF)</a>`;
   } else {
-    links = Object.values(PROSPEKTE).map(([lab, href]) =>
-      `<a href="${href}" download>${lab} (PDF)</a>`).join('');
+    links = Object.entries(PROSPEKTE).map(([key, [lab, href]]) =>
+      `<a href="${href}" download data-dl="${key}">${lab} (PDF)</a>`).join('');
   }
   return `<div class="dl"><div class="t">Your prospectus is ready to download.</div><div class="lnk">${links}</div></div>`;
 }
+// Anonyme Download-Zaehlung (keine Cookies, keine IP) — feuert neben dem eigentlichen Download.
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a[data-dl]');
+  if (!a) return;
+  try {
+    new Image().src = 'https://imac-von-callidus.tail200fa5.ts.net/z?dl='
+      + encodeURIComponent(a.getAttribute('data-dl')) + '&t=' + Date.now();
+  } catch (_) {}
+});
 
 // Detailprogramm einsetzen — vom Formular oder vom Hausschluessel
 function zeigeProgramm(prog, springen, role) {

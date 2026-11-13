@@ -755,11 +755,11 @@ section em,.metall.hell{
     <a href="#programme">课程</a>
     <a href="#edition">2027 届</a>
     <a href="#who">面向谁</a>
-    <a href="advisory.html">荣誉顾问委员会</a>
-    <a href="teachers.html">师资团队</a>
-    <a href="agency-partners.html">合作经纪机构</a>
-    <a href="conservatoires.html">合作音乐学院</a>
-    <a href="events.html">活动</a>
+    <a href="/zh/advisory.html">荣誉顾问委员会</a>
+    <a href="/zh/teachers.html">师资团队</a>
+    <a href="/zh/agency-partners.html">合作经纪机构</a>
+    <a href="/zh/conservatoires.html">合作音乐学院</a>
+    <a href="/zh/events.html">活动</a>
     <a href="#apply">申请</a>
   </div>
 </nav>
@@ -1064,11 +1064,11 @@ section em,.metall.hell{
     <div class="cdown rv" aria-live="polite">
       <span class="cd-lab">Applications close in</span>
       <div class="cd-clock">
-        <div class="cd-seg"><span class="cd-num" id="cd-d">37</span><span class="cd-u" id="cd-du">days</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-d">36</span><span class="cd-u" id="cd-du">days</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-h">1</span><span class="cd-u" id="cd-hu">hour</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-h">21</span><span class="cd-u" id="cd-hu">hours</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-m">9</span><span class="cd-u" id="cd-mu">minutes</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-m">32</span><span class="cd-u" id="cd-mu">minutes</span></div>
       </div>
       <span class="cd-date" id="cd-date">Deadline · 20 December 2026, 18:00 CET</span>
     </div>
@@ -1166,8 +1166,8 @@ https://youtu.be/…" required=""></textarea>
 
       <input type="text" id="bw-web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none">
 
-      <label class="consent field full"><input id="ok1" name="terms" type="checkbox" required=""><span>我已阅读并接受<a href="terms.html" target="_blank" rel="noopener">申请条件</a>。</span></label>
-      <label class="consent field full"><input id="ok2" name="privacy" type="checkbox" required=""><span>我已阅读<a href="privacy.html" target="_blank" rel="noopener">隐私声明</a>，并同意为本次甄选保存与评估我的申请及录音。</span></label>
+      <label class="consent field full"><input id="ok1" name="terms" type="checkbox" required=""><span>我已阅读并接受<a href="/zh/terms.html" target="_blank" rel="noopener">申请条件</a>。</span></label>
+      <label class="consent field full"><input id="ok2" name="privacy" type="checkbox" required=""><span>我已阅读<a href="/zh/privacy.html" target="_blank" rel="noopener">隐私声明</a>，并同意为本次甄选保存与评估我的申请及录音。</span></label>
       <label class="consent field full"><input id="ok3" name="future" type="checkbox"><span>可选：您可保留我的申请，并在日后各届时通知我。</span></label>
 
       <div class="submit"><button type="submit" class="sub-btn" id="bw-btn">提交申请</button></div>
@@ -1218,11 +1218,11 @@ https://youtu.be/…" required=""></textarea>
         <a href="#programme">课程</a>
         <a href="#edition">2027 届</a>
         <a href="#who">面向谁</a>
-        <a href="advisory.html">荣誉顾问委员会</a>
-        <a href="teachers.html">师资团队</a>
-    <a href="agency-partners.html">合作经纪机构</a>
-    <a href="conservatoires.html">合作音乐学院</a>
-    <a href="events.html">活动</a>
+        <a href="/zh/advisory.html">荣誉顾问委员会</a>
+        <a href="/zh/teachers.html">师资团队</a>
+    <a href="/zh/agency-partners.html">合作经纪机构</a>
+    <a href="/zh/conservatoires.html">合作音乐学院</a>
+    <a href="/zh/events.html">活动</a>
         <a href="#apply">申请</a>
       </div>
       <div>
@@ -1237,7 +1237,7 @@ https://youtu.be/…" required=""></textarea>
     </div>
     <div class="base">
       <span>© 2026 European Centre of Performing Arts<br><span class="founded">Founded by Danny Matz</span></span>
-      <span style="white-space:nowrap"><a href="imprint.html">法律声明</a> · <a href="privacy.html">隐私</a></span>
+      <span style="white-space:nowrap"><a href="/zh/imprint.html">法律声明</a> · <a href="/zh/privacy.html">隐私</a></span>
     </div>
   </div>
   <script>
@@ -1596,13 +1596,22 @@ const PROSPEKTE = {
 function downloadBlock(role) {
   let links;
   if (PROSPEKTE[role]) {
-    links = `<a href="${PROSPEKTE[role][1]}" download>Download the prospectus (PDF)</a>`;
+    links = `<a href="${PROSPEKTE[role][1]}" download data-dl="${role}">Download the prospectus (PDF)</a>`;
   } else {
-    links = Object.values(PROSPEKTE).map(([lab, href]) =>
-      `<a href="${href}" download>${lab} (PDF)</a>`).join('');
+    links = Object.entries(PROSPEKTE).map(([key, [lab, href]]) =>
+      `<a href="${href}" download data-dl="${key}">${lab} (PDF)</a>`).join('');
   }
   return `<div class="dl"><div class="t">Your prospectus is ready to download.</div><div class="lnk">${links}</div></div>`;
 }
+// Anonyme Download-Zaehlung (keine Cookies, keine IP) — feuert neben dem eigentlichen Download.
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a[data-dl]');
+  if (!a) return;
+  try {
+    new Image().src = 'https://imac-von-callidus.tail200fa5.ts.net/z?dl='
+      + encodeURIComponent(a.getAttribute('data-dl')) + '&t=' + Date.now();
+  } catch (_) {}
+});
 
 // Detailprogramm einsetzen — vom Formular oder vom Hausschluessel
 function zeigeProgramm(prog, springen, role) {
